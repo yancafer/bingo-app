@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bingo-app {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 900px; /* Aumentando a largura */
+  max-width: 90%; /* Para evitar ultrapassar a tela em dispositivos pequenos */
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+h1 {
+  color: #d9534f;
+}
+
+.phrase {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.current-number {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.controls button {
+  background: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.controls button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) {
+  background: #4cae4c;
+}
+
+.drawn-numbers {
+  margin-top: 20px;
+}
+
+.drawn-numbers p {
+  font-size: 0.9rem;
+}
