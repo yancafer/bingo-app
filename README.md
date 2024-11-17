@@ -3,6 +3,8 @@
 
 Este é um aplicativo de bingo online criado com **React** e **TypeScript**. Ele oferece uma experiência interativa para jogos de bingo, com funcionalidades de sorteio de números e frases temáticas.
 
+##[Demo](https://bingo-app-kohl.vercel.app/)
+
 ## Funcionalidades
 
 - Sorteio de números do bingo (B, I, N, G, O) com faixas específicas.
