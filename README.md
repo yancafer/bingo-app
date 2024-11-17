@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Bingo App 🎄
 
-Currently, two official plugins are available:
+Este é um aplicativo de bingo online criado com **React** e **TypeScript**. Ele oferece uma experiência interativa para jogos de bingo, com funcionalidades de sorteio de números e frases temáticas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Sorteio de números do bingo (B, I, N, G, O) com faixas específicas.
+- Frases temáticas para anunciar os números a partir do quinto sorteio.
+- Reinício do jogo com números reembaralhados.
+- Reprodução das chamadas em português com suporte a frases específicas para números como "Dois patinhos na lagoa" e "Idade de Cristo".
+- Foco em personalização para o tema natalino 🎄.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React** com **TypeScript**
+- API de **Speech Synthesis** para leitura de frases
+- Estilização com **CSS**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Pré-requisitos
+
+Certifique-se de ter o **Node.js** instalado em sua máquina. 
+
+### Node.js:
+- [Node.js Download](https://nodejs.org/)
+
+## Como rodar o projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seuusuario/bingo-app.git
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd bingo-app
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Abra o navegador e acesse:
+   ```
+   http://localhost:3000
+   ```
+
+## Estrutura do Projeto
+
+```
+bingo-app/
+├── public/                 # Arquivos públicos (ex.: ícones, assets)
+├── src/                    # Código-fonte principal
+│   ├── App.css             # Estilos do aplicativo
+│   ├── App.tsx             # Componente principal do React
+│   ├── index.tsx           # Ponto de entrada do React
+├── package.json            # Gerenciamento de dependências e scripts
+├── tsconfig.json           # Configuração do TypeScript
+├── README.md               # Documentação do projeto
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contribuições
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Contribuições são bem-vindas! Sinta-se à vontade para abrir **issues** ou criar um **pull request**.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Faça um fork do projeto.
+2. Crie uma branch para sua funcionalidade:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça o commit das suas alterações:
+   ```bash
+   git commit -m "Adicionei minha nova feature"
+   ```
+4. Envie as alterações:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request no GitHub.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+🎅 **Divirta-se e boas festas com o Bingo App!** 🎄
